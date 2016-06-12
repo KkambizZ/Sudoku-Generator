@@ -6,7 +6,7 @@ This Program generates an arbitrary Sudoku puzzle in each run
 - Navigate to Working-Builds directory
 - Navigate to the directory of choice
 - run this command:
-$ java -cp build_name.jar Sudoku.MyMain
+$ java -cp build_name.jar Sudoku.MyMain   
 //replace build_name with proper name
 
 ###KkambizZ
