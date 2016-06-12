@@ -97,18 +97,20 @@ public class SudokuGenerator {
 					usedNums[puzzle[j][i]] = true;
 
 				//Make "not available" any previous number used in that square
-				for(int j = 0; j < rowNumber; j++) {
-					//get the corners of each box
-					int r = (j / BOX_SIZE) * BOX_SIZE;
-					int c = (i / BOX_SIZE) * BOX_SIZE;
-					
-					//check if the number is already used in that box
-					for (int k = 0; k < SIZE; k++) {
-						if (puzzle[r + (k % BOX_SIZE)][c + (k / BOX_SIZE)] == puzzle[j][i])
-							usedNums[puzzle[j][i]] = true;	
+				//This condition is checked only when SIZE is of square numbers (e.g. 4,9,16,25,36,49,...)
+				if (SIZE == 4 || SIZE == 9 || SIZE == 16) {
+					for(int j = 0; j < rowNumber; j++) {
+						//get the corners of each box
+						int r = (j / BOX_SIZE) * BOX_SIZE;
+						int c = (i / BOX_SIZE) * BOX_SIZE;
+
+						//check if the number is already used in that box
+						for (int k = 0; k < SIZE; k++) {
+							if (puzzle[r + (k % BOX_SIZE)][c + (k / BOX_SIZE)] == puzzle[j][i])
+								usedNums[puzzle[j][i]] = true;	
+						}
 					}
 				}
-				
 				availableNums.clear(); // first clear any previous data from the List
 
 				//fill the array with the possible numbers
