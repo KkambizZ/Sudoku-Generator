@@ -8,5 +8,3 @@ This Program generates an arbitrary Sudoku puzzle in each run
 - run this command:
 $ java -cp build_name.jar Sudoku.MyMain   
 //replace build_name with proper name
-
-###KkambizZ
