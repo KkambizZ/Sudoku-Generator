@@ -1,5 +1,11 @@
 package Sudoku;
 
+/**
+ * 
+ * @author Kambiz
+ * @version 0.1
+ */
+
 import java.util.ArrayList;
 import java.util.Random;
 

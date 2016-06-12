@@ -1,5 +1,11 @@
 package Sudoku;
 
+/**
+ * 
+ * @author Kambiz
+ * @version 0.1
+ */
+
 public class MyMain {
 	public static void main(String[] arg) {
 		
