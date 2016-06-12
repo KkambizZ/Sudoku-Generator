@@ -12,8 +12,10 @@ Simply pass the SIZE to the SudokuGenerator(SIZE) in the "main" class of the cod
 Notice: All builds is a 4*4 Sudoku puzzle
 
 - Open terminal
-- Navigate to Working-Builds directory
+- Navigate to ```WORKING-BUILDS``` directory
 - Navigate to the directory of choice
 - run this command:
+```sh
 $ java -cp build_name.jar Sudoku.MyMain   
+```
 //replace build_name with the exact name of the build
